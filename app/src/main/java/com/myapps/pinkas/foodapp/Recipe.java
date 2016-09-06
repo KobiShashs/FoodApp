@@ -5,94 +5,95 @@ package com.myapps.pinkas.foodapp;
  */
 public class Recipe {
 
-    private String recipeImageUrl;
-    private int recipeID;
-    private String recipeSourceUrl;
-    private String recipeF2fUrl;
-    private String recipeTitle;
-    private String recipePublisherName;
-    private String recipePublisherUrl;
-    private float recipeF2fSocialRank;
-    private int recipeOnPageNumber;
-    private String recipeIngredients;
 
-    public String getRecipeImageUrl() {
-        return recipeImageUrl;
+
+
+    private String mPublisherName;
+    private String mF2fUrl;
+    private String mTitle;
+    private String mSourceUrl;
+    private String mID;
+    private String mImageUrl;
+    private double mF2fSocialRank;
+    private String mPublisherUrl;
+//    private int recipeOnPageNumber;
+//    private String recipeIngredients;
+
+    public Recipe(String mPublisherName, String mF2fUrl,String mTitle,String mSourceUrl,String mID,String mImageUrl,
+                  double mF2fSocialRank,String mPublisherUrl){
+        setmPublisherName(mPublisherName);
+        setmF2fUrl(mF2fUrl);
+        setmTitle(mTitle);
+        setmSourceUrl(mSourceUrl);
+        setmID(mID);
+        setmImageUrl(mImageUrl);
+        setmF2fSocialRank(mF2fSocialRank);
+        setmPublisherUrl(mPublisherUrl);
     }
 
-    public void setRecipeImageUrl(String recipeImageUrl) {
-        this.recipeImageUrl = recipeImageUrl;
+    public String getmPublisherName() {
+        return mPublisherName;
     }
 
-    public int getRecipeID() {
-        return recipeID;
+    public void setmPublisherName(String mPublisherName) {
+        this.mPublisherName = mPublisherName;
     }
 
-    public void setRecipeID(int recipeID) {
-        this.recipeID = recipeID;
+    public String getmF2fUrl() {
+        return mF2fUrl;
     }
 
-    public String getRecipeF2fUrl() {
-        return recipeF2fUrl;
+    public void setmF2fUrl(String mF2fUrl) {
+        this.mF2fUrl = mF2fUrl;
     }
 
-    public void setRecipeF2fUrl(String recipeF2fUrl) {
-        this.recipeF2fUrl = recipeF2fUrl;
+    public String getmTitle() {
+        return mTitle;
     }
 
-    public String getRecipeSourceUrl() {
-        return recipeSourceUrl;
+    public void setmTitle(String mTitle) {
+        this.mTitle = mTitle;
     }
 
-    public void setRecipeSourceUrl(String recipeSourceUrl) {
-        this.recipeSourceUrl = recipeSourceUrl;
+    public String getmSourceUrl() {
+        return mSourceUrl;
     }
 
-    public String getRecipeTitle() {
-        return recipeTitle;
+    public void setmSourceUrl(String mSourceUrl) {
+        this.mSourceUrl = mSourceUrl;
     }
 
-    public void setRecipeTitle(String recipeTitle) {
-        this.recipeTitle = recipeTitle;
+    public String getmID() {
+        return mID;
     }
 
-    public String getRecipePublisherUrl() {
-        return recipePublisherUrl;
+    public void setmID(String mID) {
+        this.mID = mID;
     }
 
-    public void setRecipePublisherUrl(String recipePublisherUrl) {
-        this.recipePublisherUrl = recipePublisherUrl;
+    public String getmImageUrl() {
+        return mImageUrl;
     }
 
-    public String getRecipePublisherName() {
-        return recipePublisherName;
+    public void setmImageUrl(String mImageUrl) {
+        this.mImageUrl = mImageUrl;
     }
 
-    public void setRecipePublisherName(String recipePublisherName) {
-        this.recipePublisherName = recipePublisherName;
+    public double getmF2fSocialRank() {
+        return mF2fSocialRank;
     }
 
-    public float getRecipeF2fSocialRank() {
-        return recipeF2fSocialRank;
+    public void setmF2fSocialRank(double mF2fSocialRank) {
+        this.mF2fSocialRank = mF2fSocialRank;
     }
 
-    public void setRecipeF2fSocialRank(float recipeF2fSocialRank) {
-        this.recipeF2fSocialRank = recipeF2fSocialRank;
+    public String getmPublisherUrl() {
+        return mPublisherUrl;
     }
 
-    public int getRecipeOnPageNumber() {
-        return recipeOnPageNumber;
+    public void setmPublisherUrl(String mPublisherUrl) {
+        this.mPublisherUrl = mPublisherUrl;
     }
 
-    public void setRecipeOnPageNumber(int recipeOnPageNumber) {
-        this.recipeOnPageNumber = recipeOnPageNumber;
-    }
 
-    public String getRecipeIngredients() {
-        return recipeIngredients;
-    }
-
-    public void setRecipeIngredients(String recipeIngredients) {
-        this.recipeIngredients = recipeIngredients;
-    }
 }
